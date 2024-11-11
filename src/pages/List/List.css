@@ -1,0 +1,106 @@
+/* General styles for list */
+.list-add {
+    width: calc(100% - 260px); /* Adjust for sidebar */
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px lightblue;
+    margin: 20px 0 20px 260px; /* Align next to the sidebar */
+    transition: width 0.3s ease;
+}
+
+/* Make the list table take full width */
+.list-table {
+    width: 100%; /* Make the table 100% of its container */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    color: palevioletred;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Adjusted list table formatting */
+.list-table-format {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 3fr 2fr; /* Doubled widths for better distribution */
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px lightpink;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center-aligns text content vertically */
+}
+
+.list-table-format:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px plum;
+}
+
+/* Title row */
+.list-table-format.title {
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.list-table-format.title b {
+    font-size: 14px;
+}
+
+/* Product details styles */
+.list-table-format img {
+    width: 80px; /* Increased size for better visibility */
+    height: 80px; /* Increased size for better visibility */
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px lightblue;
+}
+
+.list-table-format p {
+    margin: 0;
+    color: purple;
+    font-size: 16px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Responsive adjustments for medium and small screens */
+@media screen and (max-width: 1200px) {
+    .list-add {
+      width: calc(100% - 200px); /* Adjusted for medium screens */
+      margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list-add {
+      width: 100%; /* Full width on small screens */
+      margin-left: 0;
+      padding: 10px;
+    }
+
+    .list-table-format {
+      grid-template-columns: 1fr 1fr 1fr; /* Reduce number of columns on small screens */
+    }
+
+    .list-table-format img {
+      grid-row: 1 / 2;
+    }
+
+    .list-table-format p {
+      font-size: 14px;
+    }
+}

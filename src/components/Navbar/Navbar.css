@@ -1,0 +1,27 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profile {
+    width: 100px;   /* Adjust size as needed */
+    height: 100px;  /* Keep same width and height for a perfect circle */
+    border-radius: 50%; /* Circular shape */
+    background-color: darkmagenta;
+    padding: 5px; /* Space between the image and the background */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better visibility */
+  }
+  /* For the logo with circular effect, but ensuring edges aren't cut off */
+  .logo {
+    width: 120px;   /* Adjust size to fit the design */
+    height: 120px;  /* Adjust height as well */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: contain; /* Keeps the aspect ratio and fits the logo within the circle */
+    background-color: lightcoral; /* Optional: add background color to ensure the full logo is visible */
+    padding: 5px; /* Optional: add padding if needed to avoid cutting logo edges */
+  }
+  

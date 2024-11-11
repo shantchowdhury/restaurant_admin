@@ -1,0 +1,112 @@
+/* Main container */
+.order.add {
+    padding: 20px;
+    background: linear-gradient(135deg, #e3fdfd, #ffe6fa);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px lightpink;
+   
+  }
+  
+  h3 {
+    text-align: center;
+    color: palevioletred;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Orders list */
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual order item */
+  .order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    background-color: white;
+    border-radius: 1px solid palevioletred;
+    padding: 20px;
+    box-shadow: pink;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px;
+  }
+  
+  .order-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px plum;
+  }
+  
+  .order-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+  }
+  
+  /* Order details */
+  .order-item div {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .order-item-food {
+    font-weight: bold;
+    color: aquamarine;
+    margin-bottom: 8px;
+  }
+  
+  .order-item-name {
+    font-size: 20px;
+    color: purple;
+  }
+  
+  .order-item-address p,
+  .order-item-phone {
+    font-size: 16px;
+    color: purple;
+  }
+  
+  .order-item-address p {
+    margin: 4px 0;
+  }
+  
+  /* Item count and total price */
+  .order-item p {
+    font-weight: bold;
+    color: rebeccapurple;
+  }
+  
+  /* Status dropdown */
+  select {
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  select:hover {
+    background-color: rebeccapurple;
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .order-item {
+      width: 100%;
+    }
+  
+    select {
+      width: 100%;
+    }
+  }
+  
