@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 const List = () => {
   const [list, setList] = useState([]);
 
-  const url = 'http://localhost:4000'; // Adjust this to your API endpoint
+  const url = 'https://restaurant-be-uo5b.onrender.com'; // Adjust this to your API endpoint
 
   // Fetch list items when the component is mounted
   const fetchList = async () => {

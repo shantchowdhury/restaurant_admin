@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 
 const Add = () => {
-  const url = 'http://localhost:4000';
+  const url = 'https://restaurant-be-uo5b.onrender.com';
   const [imagePreview, setImagePreview] = useState(null);
   const [imageFile, setImageFile] = useState(null);
   const [data, setData] = useState({
